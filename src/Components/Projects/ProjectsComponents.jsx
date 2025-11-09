@@ -24,78 +24,78 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
     live: "https://jbl-com-io.vercel.app/",
     github: "https://github.com/md-jahid-islam/JBL.COM.git",
   },
-  {
+   {
     id: 3,
+    title: "cheap deals e-commerce Shop",
+    image: "/images/cheap-deals.png",
+    description:
+    "cheap deals e-commerce shop featuring smooth scroll animations, galleries, and contact integration.",
+    tech: ["React.js", "Redux", "Tailwind CSS", "Framer Motion", "Firebase"],
+    live: "https://cheap-deals-iota.vercel.app/",
+    github: "https://github.com/md-jahid-islam/Cheap-Deals-E-commerce-Shop.git",
+  },
+    {
+    id: 4,
+    title: "NeoCart E-commerce",
+    image: "/images/e-commerce-shop-five .png",
+    description:
+    "Modern e-commerce application featuring smooth animations, product galleries, and a seamless shopping experience.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+    live: "https://e-commerce-shop-five-zeta.vercel.app/",
+    github: "https://github.com/md-jahid-islam/e-commerce-shop.git",
+  },
+    {
+    id: 5,
+    title: "Car Rental Website",
+    image: "/images/carrental.png",
+    description:
+    "Modern car rental website featuring smooth animations, galleries, and contact integration.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+    live: "https://car-rental-website-design.vercel.app/",
+    github: "https://github.com/md-jahid-islam/Car-Rental-website-design.git",
+  },
+   {
+    id: 6,
     title: "Doctor Care",
     image: "/images/html-css-js-crash-course-doctor-care-project-main.vercel.app_.png",
     description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
+    "Modern Doctor Care featuring smooth scroll animations, galleries, and contact integration.",
     tech: ["HTML-5", "CSS-3", "Tailwind CSS"],
     live: "https://html-css-js-crash-course-doctor-care-project-main.vercel.app/",
     github: "https://github.com/md-jahid-islam/html-css-js-crash-course-doctor-care-project-main.git",
   },
     {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
+    id: 7,
+    title: "mixedit Up",
+    image: "/images/mixedit-up.png",
     description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
+    "mixedit Up featuring smooth scroll animations, galleries, and contact integration.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+    live: "https://mixedit-up-sepia.vercel.app/",
+    github: "https://github.com/md-jahid-islam/Mixedit-UP.git",
   },
     {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
+    id: 8,
+    title: "Traveling",
+    image: "/images/traveling.png",
     description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
+    "Modern Traveling featuring smooth scroll animations, galleries, and contact integration.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+    live: "https://traveling-jet.vercel.app/",
+    github: "https://github.com/md-jahid-islam/Traveling.git",
   },
     {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
+    id: 9,
+    title: "pulse-robot",
+    image: "/images/pulse-robot.png",
     description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
+    "Modern pulse-robot featuring smooth scroll animations, galleries, and contact integration.",
+    tech: ["TypeScript", "Tailwind CSS", "shadcn-ui", "React.js"],
+    live: "https://pulse-robot-chi.vercel.app/",
+    github: "https://github.com/md-jahid-islam/Pulse-Robot.git",
   },
     {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
-    description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
-  },
-    {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
-    description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
-  },
-    {
-    id: 3,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
-    description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
-  },
-    {
-    id: 3,
+    id: 10,
     title: "Mcap Photography",
     image: "/images/mcap.png",
     description:
@@ -105,14 +105,14 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
     github: "https://github.com/jahidulislamdev/Mcap",
   },
   {
-    id: 4,
-    title: "Login & Authentication System",
-    image: "/images/login.png",
+    id: 11,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
     description:
-    "A responsive login system built using Firebase authentication, form validation, and password toggle.",
-    tech: ["React", "Firebase", "React-Toastify"],
-    live: "#",
-    github: "#",
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
   },
  ];
 
@@ -183,4 +183,4 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
   
  // ========== Exporting the Projects Components end ========== // 
  export default ProjectsComponents;
-  // gfjhsdkhgjksdfjklgsfjk
+ 
