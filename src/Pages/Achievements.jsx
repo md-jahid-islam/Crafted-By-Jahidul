@@ -1,12 +1,12 @@
 import React from 'react'
 import AchievementsComponents from '../Components/Achievements/AchievementsComponents'
 
-const Achievements = () => {
+ const Achievements = () => {
   return (
     <>
     <AchievementsComponents/>
     </>
   )
-}
+ }
 
-export default Achievements
+ export default Achievements

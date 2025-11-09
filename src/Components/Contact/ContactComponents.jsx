@@ -6,7 +6,7 @@ import {
  import { toast, ToastContainer } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
  
-  // =============== Contact Components start ========= // 
+ // =============== Contact Components start ========= // 
  const ContactComponents = () => {
   // ============ 🧩 Form State ============ // 
   const [formData, setFormData] = useState({
@@ -16,7 +16,7 @@ import {
     message: "",
   });
 
-  // ========= 🔍 Handle Input Change ========== // 
+ // ========= 🔍 Handle Input Change ========== // 
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -24,15 +24,14 @@ import {
     });
   };
 
-  // ========== ✅ Form Validation + Submit ============ // 
+ // ========== ✅ Form Validation + Submit ============ // 
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, subject, message } = formData;
 
-    // ============ Email validation regex =========== // 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!name || !email || !subject || !message) {
+ // ============ Email validation regex =========== // 
+ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ if (!name || !email || !subject || !message) {
       toast.error("⚠️ Please fill in all fields!", {
         position: "top-center",
         theme: "dark",
@@ -48,13 +47,13 @@ import {
       return;
     }
 
-    // ========== ✅ Success Message ============== // 
+ // ========== ✅ Success Message ============== // 
     toast.success("✅ Message sent successfully!", {
       position: "top-center",
       theme: "dark",
     });
 
-    // =========== Clear form fields after submission ========== // 
+ // =========== Clear form fields after submission ========== // 
     setFormData({
       name: "",
       email: "",

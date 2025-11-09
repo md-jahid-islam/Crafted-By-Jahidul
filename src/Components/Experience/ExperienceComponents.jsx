@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaServer, FaLaptopCode } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } from "react-icons/fa";
  
  // ======= Experience Data ======= //
  const experiences = [
@@ -36,7 +36,15 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode } from "react-icons/fa";
     description:"Designed static and responsive websites using HTML, CSS, and Bootstrap. Learned layout structuring and professional design principles.",
     icon: <FaLaptopCode className="text-yellow-400 text-5xl" />,
   },
-];
+  {
+    id: 4,
+    role: "Data Entry",
+    company: "Habiganj IT Institute",
+    duration: "2023 – 2024",
+    description:"Performed data entry tasks with a focus on accuracy and efficiency. Utilized various software tools to manage and organize data effectively.",
+    icon: <FaRegKeyboard className="text-yellow-400 text-5xl" />,
+  },
+ ];
 
  // ========== Experience Components start ========== // 
  const ExperienceComponents = () => {
@@ -89,5 +97,5 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode } from "react-icons/fa";
   );
  };
 
-  // ========== Exporting the Experince Components end ========== // 
+ // ========== Exporting the Experince Components end ========== // 
  export default ExperienceComponents;

@@ -17,8 +17,8 @@ import React from "react";
             <div className="absolute inset-0 from-blue-500 to-cyan-500 opacity-30 blur-2xl rounded-3xl group-hover:opacity-60 transition duration-500"></div>
             <video className="rounded-2xl w-full h-auto object-cover border border-gray-700 shadow-lg group-hover:scale-105 transition-transform duration-500" src="/images/jahid.mp4" autoPlay loop muted playsInline >
             </video>
-            <video className="rounded-2xl w-full h-auto mt-10 object-cover border border-gray-700 shadow-lg group-hover:scale-105 transition-transform duration-500" src="/images/jahid.mp4" autoPlay loop muted playsInline >
-            </video>
+            <img className="rounded-2xl w-full h-auto mt-10 object-cover border border-gray-700 shadow-lg group-hover:scale-105 transition-transform duration-500" src="/images/jahid.png" autoPlay loop muted playsInline >
+            </img>
           </div>
         </div>
         

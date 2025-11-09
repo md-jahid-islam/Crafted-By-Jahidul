@@ -66,5 +66,5 @@ import { SiJavascript, SiTailwindcss, SiFirebase, SiMongodb, SiFigma, SiRedux } 
   );
  };
  
-  // ========== Exporting the skills Components end ========== // 
+ // ========== Exporting the skills Components end ========== // 
  export default SkillsComponents;

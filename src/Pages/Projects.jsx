@@ -1,12 +1,12 @@
 import React from 'react'
 import ProjectsComponents from '../Components/Projects/ProjectsComponents'
 
-const Projects = () => {
+ const Projects = () => {
   return (
     <>
     <ProjectsComponents/>
     </>
   )
-}
+ }
 
-export default Projects
+ export default Projects

@@ -8,7 +8,8 @@ import Projects from './Pages/Projects'
 import ExperienceComponents from './Components/Experience/ExperienceComponents'
 import AchievementsComponents from './Components/Achievements/AchievementsComponents'
 import ContactComponents from './Components/Contact/ContactComponents'
-function App() {
+
+ function App() {
 
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
       </BrowserRouter>
     </>
   )
-}
-
-export default App
+ }
+ 
+ // ========== Exporting the App Components end ========== // 
+ export default App
