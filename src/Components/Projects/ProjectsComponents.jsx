@@ -96,13 +96,13 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
   },
     {
     id: 10,
-    title: "Mcap Photography",
-    image: "/images/mcap.png",
+    title: "Shopsy - Shopify Store",
+    image: "/images/Shopsy.png",
     description:
-    "Modern photography portfolio app featuring smooth scroll animations, galleries, and contact integration.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://mcap.vercel.app/",
-    github: "https://github.com/jahidulislamdev/Mcap",
+    "Modern Shopify store featuring smooth scroll animations, galleries, and contact integration.",
+    tech: ["React.js", "Tailwind CSS", "aos", "react", "react-slick", "slick-carousel"],
+    live: "https://shopify-sigma-henna.vercel.app/",
+    github: "https://github.com/md-jahid-islam/shopify.git",
   },
   {
     id: 11,
@@ -114,6 +114,117 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
     live: "https://todo-list-app-rd3c.vercel.app/",
     github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
   },
+  {
+    id: 12,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 13,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 14,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 15,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 16,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 17,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 18,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 19,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 20,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 21,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+  {
+    id: 23,
+    title: "Task Done Keep It Up",
+    image: "/images/todo.png",
+    description:
+    "A Todo task crafted by Jahidul Islam. My todo app uses basic HTML-5, CSS-3, and JavaScript. It features modern design and allows tasks to be edited, deleted, and counted. You can increment the count by 1 (++) and decrement it by 1 (--).",
+    tech: ["HTML-5", "CSS-3", "JavaScript"],
+    live: "https://todo-list-app-rd3c.vercel.app/",
+    github: "https://github.com/md-jahid-islam/TASK-DONE-TODO.git",
+  },
+
  ];
 
   // ========== Projects Components start ========== // 
