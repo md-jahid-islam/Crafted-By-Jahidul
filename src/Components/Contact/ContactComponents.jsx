@@ -96,7 +96,7 @@ import {
               </div>
               <div className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-purple-400 text-xl" />
-                <span>Uttara Azampur, Dhaka, Bangladesh</span>
+                <span>Uttara, Azampur, Dhaka, Bangladesh,</span>
               </div>
             </div>
 
