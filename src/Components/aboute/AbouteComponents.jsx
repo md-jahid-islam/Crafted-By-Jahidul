@@ -43,9 +43,10 @@ import React from "react";
             💼 Professional Experience
             </h3>
             <ul className="space-y-2 text-gray-300 text-sm md:text-base">
-              <li>• 2+ years as a Full Stack Developer (React, Node.js, MongoDB)</li>
-              <li>• Built responsive web apps like <span className="text-blue-400">Orebi Ecommerce</span> and <span className="text-blue-400">Rupantorito Portfolio</span></li>
-              <li>• Expertise in Firebase Auth, API Integration & UI/UX Animations</li>
+              <li>• Developed and deployed responsive, high-performance web applications using React, Node.js, Express.js, and MongoDB.</li>
+              <li>• Successfully built and launched projects including Orebi Ecommerce and Rupantorito Portfolio, focusing on scalability and modern design. <span className="text-blue-400">Firebase Authentication, RESTful API integrations</span> and <span className="text-blue-400">Implemented, and advanced UI/UX animations for improved user engagement.</span></li>        
+              <li>• Collaborated on full project lifecycles — from frontend architecture and backend logic to database management and deployment.</li>
+              <li>• Passionate about building interactive web solutions, enhancing performance, and delivering exceptional digital experiences.</li>
             </ul>
           </div>
 
