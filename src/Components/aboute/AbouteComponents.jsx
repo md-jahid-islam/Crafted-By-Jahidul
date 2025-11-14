@@ -3,9 +3,9 @@ import React from "react";
  // ============= About Components start ========== // 
  const AboutComponent = () => {
   return (
-    <>
+    <>    
+    {/* Background gradient glow */}
     <section id="About" className="relative from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden">
-      {/* Background gradient glow */}
       <div className="absolute inset-0  from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-30"></div>
 
       {/* Main Content */}
@@ -82,4 +82,3 @@ import React from "react";
  
  // ============= Exporting the AboutComponent end ========= //
  export default AboutComponent;
- //  diujdfakjfldskjflsdkf

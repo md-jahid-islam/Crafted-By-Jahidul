@@ -3,9 +3,9 @@ import HomeComponents from '../Components/home/HomeComponents'
 import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
-import ExperienceComponents from '../Components/Experience/ExperienceComponents'
-import AchievementsComponents from '../Components/Achievements/AchievementsComponents'
 import ContactComponents from '../Components/Contact/ContactComponents'
+import Experience from './Experience'
+import AchievementsComponents from '../Components/Achievements/AchievementsComponents'
 
  // ========== Home page start ========== // 
  const Home = () => {
@@ -15,7 +15,7 @@ import ContactComponents from '../Components/Contact/ContactComponents'
       <About />
       <Skills />
       <Projects />
-      <ExperienceComponents />
+      <Experience/>
       <AchievementsComponents />
       <ContactComponents />
     </>
