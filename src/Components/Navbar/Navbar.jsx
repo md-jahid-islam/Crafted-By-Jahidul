@@ -35,9 +35,9 @@ import { Link } from "react-router-dom";
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex gap-5">
-            <Link to="/"> <img className="w-12 h-12 pt-1.5 rounded-full" src="/images/zahid.jpg" alt="logo"/>
+            <Link to="/"> <img className="w-12 h-12 pt-1.5 rounded-full" src="/images/JA (3).png" alt="logo"/>
             </Link>
-            <Link className="text-2xl font-extrabold mt-1.5 text-yellow-400" to="/" > Crafted By Jahidul
+            <Link className="text-2xl mt-1.5 text-[#c6c6c6]" to="/" > Crafted By Jahidul
             </Link>
           </div>
 
@@ -85,4 +85,3 @@ import { Link } from "react-router-dom";
 
  // ============ Exporting the Navbar Components end ============ //
  export default Navbar;
- //  fhsdfjkadsfklasdlfkioerqwuipuiqwermncn

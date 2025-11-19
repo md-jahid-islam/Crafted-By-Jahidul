@@ -113,7 +113,7 @@ import { UserRoundXIcon } from "lucide-react";
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700">
+            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700  border-gray-700 hover:border-blue-500 shadow-md hover:shadow-blue-500/20 backdrop-blur-sm transition-all duration-500">
             <h4 className="text-xl font-semibold text-white mb-3">Frontend With React</h4>
             <ol className="list-decimal list-inside text-gray-300 space-y-2">
               {frontendSteps.map((s, i) => <li key={i} className="text-sm">{s.replace(/^\d+\.\s*/, '')}</li>)}
@@ -124,7 +124,7 @@ import { UserRoundXIcon } from "lucide-react";
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700">
+            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700  border-gray-700 hover:border-blue-500 shadow-md hover:shadow-blue-500/20 backdrop-blur-sm transition-all duration-500">
             <h4 className="text-xl font-semibold text-white mb-3">Node.js</h4>
             <ol className="list-decimal list-inside text-gray-300 space-y-2">
               {nodeSteps.map((s, i) => <li key={i} className="text-sm">{s.replace(/^\d+\.\s*/, '')}</li>)}
@@ -135,7 +135,7 @@ import { UserRoundXIcon } from "lucide-react";
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.16 }}            
-            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700">
+            className="bg-gray-800/60 rounded-2xl p-6 border border-gray-700  border-gray-700 hover:border-blue-500 shadow-md hover:shadow-blue-500/20 backdrop-blur-sm transition-all duration-500">
             <h4 className="text-xl font-semibold text-white mb-3">Backend</h4>
             <ol className="list-decimal list-inside text-gray-300 space-y-2">
               {backendSteps.map((s, i) => <li key={i} className="text-sm">{s.replace(/^\d+\.\s*/, '')}</li>)}

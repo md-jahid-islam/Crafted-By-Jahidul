@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } from "react-icons/fa";
- 
+ import { MdComputer } from "react-icons/md";
+
  // ======= Experience Data ======= //
  const experiences = [
   {
     id: 1,
-    role: "Frontend Developer",
+    role: "Frontend with React developer",
     company: "Creative IT Institute",
     duration: "2024 ",
     description:"Developed responsive and modern user interfaces using React, Tailwind CSS, and Framer Motion. Focused on UI/UX animation and smooth interactivity.",
@@ -43,6 +44,14 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } 
     duration: "2023 – 2024",
     description:"Performed data entry tasks with a focus on accuracy and efficiency. Utilized various software tools to manage and organize data effectively.",
     icon: <FaRegKeyboard className="text-yellow-400 text-5xl" />,
+  },
+   {
+    id: 4,
+    role: "Computer Operator",
+    company: "Habiganj IT Institute",
+    duration: "2023",
+    description:"Skilled in typing, data entry, MS Office, email handling, printing, scanning, software/hardware troubleshooting, internet research, and maintaining smooth office operations.",
+    icon: <MdComputer className="text-yellow-400 text-5xl" />,
   },
  ];
 
