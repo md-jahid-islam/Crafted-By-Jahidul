@@ -33,21 +33,22 @@ import { Link } from "react-router-dom";
     <nav className="bg-[#1F2937] shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex gap-5">
-            <Link to="/"> <img className="w-12 h-12 pt-1.5 rounded-full" src="/images/JA (3).png" alt="logo"/>
-            </Link>
-            <Link className="text-2xl mt-1.5 text-[#c6c6c6]" to="/" > Crafted By Jahidul
-            </Link>
+          {/* Logo */}        
+          <div className="flex items-center gap-5">
+          <Link to="/"> 
+          <img className="w-12 h-12 rounded-full" src="/images/JA (3).png"alt="logo"/>
+          </Link>
+          <Link className="text-2xl text-[#c6c6c6]" to="/">
+          Crafted By Jahidul
+          </Link>
           </div>
-
           {/* Desktop Menu */}
           <div className="hidden lg:block">
             <ul className="flex justify-center items-center space-x-7">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <button onClick={() => scrollToSection(link.id)} className="py-2 px-3 text-gray-300 hover:text-white hover:underline hover:underline-offset-4 transition duration-300" >
-                    {link.name}
+                  {link.name}
                   </button>
                 </li>
               ))}
@@ -57,7 +58,7 @@ import { Link } from "react-router-dom";
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" >
-              {isMenuOpen ? "✖" : "☰"}
+            {isMenuOpen ? "✖" : "☰"}
             </button>
           </div>
         </div>
@@ -77,8 +78,7 @@ import { Link } from "react-router-dom";
           ))}
         </div>
       )}
-    </nav>
-    
+     </nav>
     </>
   );
  };

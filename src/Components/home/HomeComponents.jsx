@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io';
+import { AiOutlineArrowRight } from "react-icons/ai";
 
  // ========== Home Components start ========== //
  const HomeComponents = () => {
 
   return (
     <>
-    <section id='Home'>
+    <section className='' id='Home'>
     <div className="container mx-auto px-4 py-4">
       {/* Toggle Theme Button */}
       <button className="absolute top-4 right-4 px-4 py-2 rounded-md bg-blue-500 text-white font-semibold shadow-lg hover:bg-blue-400 transition" aria-label="Toggle dark/light mode">
@@ -30,17 +31,17 @@ import { IoLogoLinkedin } from 'react-icons/io';
           </div>
           <div>
           <p className=" text-white md:text-lg font-medium max-w-md mx-auto md:mx-0">
-          You can trust me. I will make your website beautiful Design and Responsive ui/ux mordern design 
+          You can trust me. I will make your website beautiful Design and Responsive Developments ui/ux mordern design..!
           </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
             <Link to="/about">
-            <button className=" bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-xl font-semibold text-white shadow-lg hover:scale-105 hover:shadow-pink-500/30 transition-transform duration-300"> View Work
+            <button className=" px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white "> View Work
             </button>
             </Link>
             <Link to="/contact">
-            <button className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-3 rounded-xl font-semibold text-white shadow-lg hover:scale-105 hover:shadow-cyan-500/30 transition-transform duration-300"> Contact Me
+            <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white "> Hire Me..
             </button>
             </Link> 
             </div>
@@ -79,13 +80,15 @@ import { IoLogoLinkedin } from 'react-icons/io';
             </Link>
           </div>
 
-          {/* Resume Download */}
-          <div className="mt-6">
-          <a href="/images/Zahidul Islam.pdf" download="Zahidul_Islam_Resume.pdf" className="  bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-xl font-semibold text-white shadow-lg hover:scale-105 hover:shadow-pink-500/30 transition-transform duration-300"> Download Resume!</a>
-          </div>   
-        </div>
+    {/* Resume Download */}        
+    <div className="mt-6">
+    <a href="/images/Zahidul_Islam.pdf" download="Zahidul_Islam_Resume.pdf" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white">
+    Download CV
+      <AiOutlineArrowRight className="text-lg" />
+      </a>
       </div>
-  
+      </div>
+      </div> 
     </div>    
     </section>
     </>

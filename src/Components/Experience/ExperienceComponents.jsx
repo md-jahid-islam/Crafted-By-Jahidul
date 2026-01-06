@@ -59,7 +59,7 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } 
  const ExperienceComponents = () => {
   return (
     <>
-    <section id="experience" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden" >
+    <section id="experience" className=" scroll-mt-24 relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden" >
       {/* ==== Background Glow ==== */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-40"></div>
 
@@ -108,4 +108,3 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } 
 
  // ========== Exporting the Experince Components end ========== // 
  export default ExperienceComponents;
-//  jhasdgfhadjkfi9wu4rklaeril;l;iol;k,.mdfasjka
