@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
  const AbouteComponents = () => {
   return (
@@ -84,7 +85,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
       </section>
 
       {/* ================= PROJECTS ================= */}
-      <section className="py-24 px-4 sm:px-6 md:px-20">
+      {/* <section className="py-24 px-4 sm:px-6 md:px-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">
           Selected <span className="text-cyan-400">Projects</span>
@@ -108,7 +109,54 @@ import { AiOutlineArrowRight } from "react-icons/ai";
             ))}
           </div>
         </div>
-      </section> 
+      </section>  */}
+      <section className="py-28 px-4 sm:px-6 md:px-20 bg-[#020617]">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
+      Selected <span className="text-cyan-400">Projects</span>
+    </h2>
+
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      {[
+        {
+          title: "Tazenix Core Team Platform",
+          desc: "Full-featured ecommerce platform with modern UI, cart, and authentication.",
+        },
+        {
+          title: "Crafted By Jahidul Portfolio",
+          desc: "Minimal photographer portfolio designed with Figma and developed in React.",
+        },
+        {
+          title: "Realtime Chat Application",
+          desc: "Realtime chat app with Firebase, authentication, and live messaging.",
+        },
+      ].map((project, i) => (
+        <div
+          key={i}
+          className="group relative bg-[#020617]/80 backdrop-blur-xl p-8 rounded-2xl 
+          border border-gray-800 hover:border-cyan-400 transition-all duration-500
+          hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+          {/* Glow Layer */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/10 to-transparent opacity-0 group-hover:opacity-100 transition" />
+          <h3 className="text-xl font-semibold mb-3 relative z-10">
+            {project.title}
+          </h3>
+
+          <p className="text-sm text-gray-400 leading-relaxed relative z-10">
+            {project.desc}
+          </p>
+
+          <div className="mt-6 relative z-10">
+            <span className="inline-block text-cyan-400 text-sm font-medium group-hover:tracking-wide transition-all">
+          <Link to={"/Projects"}> View Project →</Link>
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
  };

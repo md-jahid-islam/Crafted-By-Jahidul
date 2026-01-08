@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaKeyboard, FaRegKeyboard } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-icons/fa";
  import { MdComputer } from "react-icons/md";
 
  // ======= Experience Data ======= //

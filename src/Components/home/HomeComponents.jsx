@@ -1,99 +1,120 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Typewriter from 'typewriter-effect';
-import { FaFacebook, FaGithub } from 'react-icons/fa';
-import { IoLogoLinkedin } from 'react-icons/io';
+import React from "react";
+import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
+import { FaFacebook, FaGithub } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
- // ========== Home Components start ========== //
  const HomeComponents = () => {
-
   return (
     <>
-    <section className='' id='Home'>
-    <div className="container mx-auto px-4 py-4">
-      {/* Toggle Theme Button */}
-      <button className="absolute top-4 right-4 px-4 py-2 rounded-md bg-blue-500 text-white font-semibold shadow-lg hover:bg-blue-400 transition" aria-label="Toggle dark/light mode">
-      </button>
+    <section id="Home" className="relative min-h-screen flex items-center bg-[#020617] px-6 md:px-16 overflow-hidden">
+      {/* Glow background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 blur-3xl"></div>
 
-      {/* Left Section */}
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-        <div className="text-center md:text-left md:w-1/2 space-y-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#94ADCF]">Jahidul Islam</h1>
-          <div className="text-lg md:text-xl text-white">
-            <Typewriter
-              options={{
-                strings: ['Front-End', 'Developer', 'with React', 'Developer', 'full stack', 'Developer', 'with Node.js'],
-                autoStart: true,
-                loop: true,
-                delay: 75,
-              }}/>
-          </div>
-          <div>
-          <p className=" text-white md:text-lg font-medium max-w-md mx-auto md:mx-0">
-          You can trust me. I will make your website beautiful Design and Responsive Developments ui/ux mordern design..!
-          </p>
-          </div>
+      <div className="container mx-auto relative z-10">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-14">
+          
+          {/* Left Content */}
+          <div className="md:w-1/2 text-center md:text-left space-y-6">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+              Hi, I’m{" "}
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Jahidul Islam
+              </span>
+            </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
-            <Link to="/about">
-            <button className=" px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white "> View Work
-            </button>
-            </Link>
-            <Link to="/contact">
-            <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white "> Hire Me..
-            </button>
-            </Link> 
-            </div>
-          <div>
-          <h2 className="text-md md:text-lg font-semibold mt-6 text-white "> Trusted by World Leading Brands <br /> Portfolio!
-          </h2>
-          </div>
-          </div>
-
-        {/* Right Section */}
-        <div className="relative flex flex-col items-center md:w-1/2 pt-10">
-          <img className="w-40 h-40 md:w-56 md:h-56 rounded-full hover:scale-105 transition-transform duration-300" src="/images/Profile.jpg" alt="Jahidul Islam Profile"/>
-          <div className="mt-6 text-center space-y-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white ">Jahidul Islam</h3>
-            <div className="text-lg md:text-xl font-semibold text-white ">
+            <div className="text-xl md:text-2xl font-semibold text-gray-300">
               <Typewriter
                 options={{
-                  strings: ['Front-End Developer!', 'with React', 'Backend', 'Node.js!'],
+                  strings: [
+                    "Front-End Developer",
+                    "React Specialist",
+                    "Node.js Learned Creative IT Institute ",
+                    "Full Stack Developer",
+                  ],
                   autoStart: true,
                   loop: true,
-                  delay: 75,
-                }}/>
+                  delay: 70,
+                }}
+              />
+            </div>
+
+            <p className="text-gray-400 max-w-lg mx-auto md:mx-0 leading-relaxed">
+             You can trust me. I will make your website beautiful Design and Responsive Developments ui/ux mordern design..! I design and develop modern, responsive, and high-performance web
+              applications with clean UI/UX and scalable code.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+              <Link to="/about">
+                <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
+                  View Work
+                </button>
+              </Link>
+
+              <Link to="/contact">
+                <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
+                  Hire Me..
+                </button>
+              </Link>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-5 justify-center md:justify-start pt-6 text-2xl text-gray-300">
+              <a href="https://www.facebook.com/jahidul.islam.98621/" target="_blank" rel="noreferrer"className="hover:text-blue-500 transition">
+                <FaFacebook />
+              </a>
+              <a href="https://github.com/md-jahid-islam" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/jahidul-islam-a5021b325" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+                <IoLogoLinkedin />
+              </a>
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="flex gap-4 mt-4 text-white text-xl">
-            <Link className='' to="https://www.facebook.com/jahidul.islam.98621/" target='balnk' aria-label="Facebook">
-            <FaFacebook className="transition" />
-            </Link>
-            <Link to="https://github.com/md-jahid-islam" target='balnk' aria-label="GitHub">
-            <FaGithub className="transition" />
-            </Link>
-            <Link to="https://www.linkedin.com/in/jahidul-islam-a5021b325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank' aria-label="LinkedIn">
-            <IoLogoLinkedin className="transition" />
-            </Link>
+          {/* Right Profile */}
+          <div className="md:w-1/2 flex flex-col items-center">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 blur-xl opacity-30"></div>
+              <img src="/images/Profile.jpg" alt="Jahidul Islam" className="relative w-44 h-44 md:w-60 md:h-60 rounded-full object-cover border-4 border-gray-800 hover:scale-105 transition-transform"/>
+            </div>
+
+            <div className="mt-6 text-center space-y-2">
+              <h3 className="text-2xl font-bold text-white">
+               Full Stack Developer
+              </h3>            
+                <div className="text-xl md:text-2xl font-semibold text-gray-300">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Front-End Developer",
+                    "React Specialist",
+                    "Node.js Learned Creative IT Institute ",
+                    "Full Stack Developer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 70,
+                }}
+              />
+            </div>
+            </div>
+
+            {/* Resume */}
+            <div className="mt-6">
+              <a href="/images/Zahidul_Islam.pdf" download className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white">
+                Download CV <AiOutlineArrowRight />
+              </a>
+            </div>
           </div>
 
-    {/* Resume Download */}        
-    <div className="mt-6">
-    <a href="/images/Zahidul_Islam.pdf" download="Zahidul_Islam_Resume.pdf" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white">
-    Download CV
-      <AiOutlineArrowRight className="text-lg" />
-      </a>
+        </div>
       </div>
-      </div>
-      </div> 
-    </div>    
-    </section>
+    </section>    
     </>
   );
  };
 
- //=========== Exporting the Home Components end ============ //
  export default HomeComponents;
