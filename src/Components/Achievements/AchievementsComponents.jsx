@@ -54,7 +54,7 @@ import { FaAward, FaTrophy, FaCertificate, FaCode } from "react-icons/fa";
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12">
-          My <span className="text-blue-500">Achievements</span>
+          My <span className="text-blue-500">Achievements.!</span>
         </h2>
 
         {/* Achievements Grid */}

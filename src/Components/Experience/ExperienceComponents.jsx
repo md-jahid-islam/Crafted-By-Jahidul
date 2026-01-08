@@ -70,7 +70,7 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-extrabold text-white mb-14">
-          My <span className="text-blue-500">Experience</span>
+          My <span className="text-blue-500">Experience.!</span>
         </motion.h2>
 
         {/* ==== Experience Grid ==== */}

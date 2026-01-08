@@ -18,7 +18,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
           <div className="md:w-1/2 text-center md:text-left space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Jahidul Islam
+                Jahidul Islam.!
               </span>
             </h1>
 
@@ -26,10 +26,11 @@ import { AiOutlineArrowRight } from "react-icons/ai";
               <Typewriter
                 options={{
                   strings: [
-                    "Front-End Developer",
-                    "React Specialist",
-                    "Node.js Learned Creative IT Institute ",
-                    "Full Stack Developer",
+                    "Front-End Developer..!",
+                    "Front-End Learned Creative IT Institute From Uttara , Dhaka",
+                    "React Tailwind.css Specialist UX & UI Design",
+                    "Full Stack Developer Node.js..!",
+                    "Node.js Learned Creative IT Institute  From Uttara , Dhaka",
                   ],
                   autoStart: true,
                   loop: true,
@@ -81,16 +82,17 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
             <div className="mt-6 text-center space-y-2">
               <h3 className="text-2xl font-bold text-white">
-               Full Stack Developer
+               Full Stack Developer..!
               </h3>            
                 <div className="text-xl md:text-2xl font-semibold text-gray-300">
               <Typewriter
                 options={{
                   strings: [
-                    "Front-End Developer",
-                    "React Specialist",
-                    "Node.js Learned Creative IT Institute ",
-                    "Full Stack Developer",
+                    "Front-End Developer..!",
+                    "Front-End Learned Creative IT Institute From Uttara , Dhaka",
+                    "React Tailwind.css Specialist UX & UI Design..",
+                    "Full Stack Developer Node.js ..!",
+                    "Node.js Learned Creative IT Institute  From Uttara , Dhaka",
                   ],
                   autoStart: true,
                   loop: true,

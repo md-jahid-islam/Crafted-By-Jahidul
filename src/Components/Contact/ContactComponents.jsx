@@ -86,20 +86,41 @@ import {
 
             {/* Contact Info */}
             <div className="space-y-4 text-gray-300">
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-blue-400 text-xl" />
-                <span>jahidulislamwebbd@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-cyan-400 text-xl" />
-                <span>+880 1540587085</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-purple-400 text-xl" />
-                <span>Uttara, Azampur, Dhaka, Bangladesh,</span>
-              </div>
+            {/* Email */}          
+            <div className="flex items-center gap-3">
+              <FaEnvelope className="text-blue-400 text-xl" />
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jahidulislamwebbd@gmail.com&su=Project%20Discussion&body=Hello%20Jahidul,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.%0D%0A%0D%0AThanks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+                aria-label="Send Email via Gmail">
+                jahidulislamwebbd@gmail.com
+              </a>
             </div>
 
+            {/* Phone */}
+            <div className="flex items-center gap-3">
+              <FaPhoneAlt className="text-cyan-400 text-xl" />
+              <a href="tel:+8801540587085"
+                className="hover:text-cyan-400 transition"
+                aria-label="Call Phone" >
+                +880 1540-587085
+              </a>
+            </div>
+
+            {/* Live Location */}
+            {/* Live Location */}
+          <div className="flex items-center gap-3">
+            <FaMapMarkerAlt className="text-purple-400 text-xl" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Uttara+Sector+6+Road+15+House+5+Dhaka+Bangladesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-purple-400 transition"
+              aria-label="View Live Location on Google Maps">
+              Uttara, Sector 6, Road 15, House 5, Dhaka, Bangladesh
+            </a>
+            </div>
+            </div>
             {/* Social Links */}
             <div className="flex gap-5 pt-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500 text-2xl transition">

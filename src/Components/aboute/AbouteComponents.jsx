@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
           {/* Text */}
           <div className="space-y-8">
             <span className="text-sm uppercase tracking-widest text-cyan-400">
-              Full Stack Web Developer
+              Full Stack Web Developer.!
             </span>
 
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
@@ -53,7 +53,7 @@ import { Link } from "react-router-dom";
 
           <div className="space-y-6">
             <h2 className="text-4xl font-bold">
-              About <span className="text-cyan-400">Me</span>
+              About <span className="text-cyan-400">Me.!</span>
             </h2>
 
             <p className="text-gray-400 leading-relaxed">
@@ -70,7 +70,7 @@ import { Link } from "react-router-dom";
 
           <div className="bg-[#020617] p-8 rounded-2xl border border-gray-800 space-y-4">
             <h3 className="text-xl font-semibold text-cyan-400">
-              Core Expertise
+              Core Expertise.!
             </h3>
 
             <ul className="space-y-2 text-gray-400">
@@ -88,7 +88,7 @@ import { Link } from "react-router-dom";
   <section className="py-28 px-4 sm:px-6 md:px-20 bg-[#020617]">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-      Selected <span className="text-cyan-400">Projects</span>
+      Selected <span className="text-cyan-400">Projects.!</span>
     </h2>
 
     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
