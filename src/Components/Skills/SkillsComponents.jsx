@@ -76,7 +76,7 @@ import { UserRoundXIcon } from "lucide-react";
 
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">
-          My <span className="text-blue-500">Skills</span>
+          My <span className="text-blue-500">Skills..!</span>
         </h2>
 
         {/* Skills Grid (no numeric % text shown) */}

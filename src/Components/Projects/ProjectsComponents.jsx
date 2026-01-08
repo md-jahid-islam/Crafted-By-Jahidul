@@ -127,7 +127,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12">
-          My <span className="text-blue-500">Projects</span>
+          My <span className="text-blue-500">Projects..!</span>
         </h2>
 
         {/* Projects Grid */}

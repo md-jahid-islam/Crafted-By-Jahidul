@@ -68,19 +68,70 @@ import { Link } from "react-router-dom";
             </p>
           </div>
 
-          <div className="bg-[#020617] p-8 rounded-2xl border border-gray-800 space-y-4">
-            <h3 className="text-xl font-semibold text-cyan-400">
-              Core Expertise.!
-            </h3>
+          <div className="bg-[#020617] p-8 rounded-2xl border border-gray-800 hover:border-cyan-400 transition space-y-6">
+          <h3 className="text-2xl font-semibold text-cyan-400 text-center">
+          Core Expertise..!
+          </h3>
 
-            <ul className="space-y-2 text-gray-400">
-              <li>✔ React, Next.js, Tailwind CSS</li>
-              <li>✔ Node.js, Express, MongoDB</li>
-              <li>✔ Firebase Authentication & APIs</li>
-              <li>✔ Responsive UI / UX Design</li>
-              <li>✔ Performance Optimization</li>
-            </ul>
-          </div>
+         {/* Skills Grid */}
+         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300">
+
+     {/* Frontend */}
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>React, Next.js, Tailwind CSS</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>HTML5, CSS3, ( JS & ES6+)</span>
+    </li>
+
+    {/* Backend */}
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Node.js, Express.js</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>MongoDB, Mongoose</span>
+    </li>
+
+    {/* Firebase */}
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Firebase Authentication   </span>
+    </li>
+
+    {/* Tools */}
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>REST APIs & Integration</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Git, GitHub, Deployment</span>
+    </li>
+
+    {/* UI/UX */}
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Responsive UI / UX Design</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Performance Optimization</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="text-cyan-400">✔</span>
+      <span>Clean Code & Best Practices</span>
+    </li>
+   </ul>
+        </div>    
         </div>
       </section>
 
@@ -129,9 +180,8 @@ import { Link } from "react-router-dom";
         </div>
       ))}
     </div>
-  </div>
-</section>
-
+   </div>
+   </section>
     </div>
   );
  };
