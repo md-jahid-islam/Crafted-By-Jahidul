@@ -30,13 +30,13 @@ import { Link } from "react-router-dom";
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/Contact" className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition">
-                Hire Me..
+              <a href="/Contact" className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
+                Hire Me..!
               </a>
-
-              <a href="/images/Zahidul_Islam.pdf" download className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition">
-                Download CV <AiOutlineArrowRight />
-              </a>
+              <a href="/images/Zahidul_Islam.pdf" download="Jahidul_Islam_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Jahidul Islam Resume" className="group inline-flex items-center gap-3 px-7 py-3 text-sm sm:text-base font-medium text-white rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition-all duration-300">
+              <span>Download CV..!</span>
+              <AiOutlineArrowRight className="text-lg transform group-hover:translate-x-1 transition" />
+             </a>
             </div>
           </div>
 
@@ -85,32 +85,7 @@ import { Link } from "react-router-dom";
       </section>
 
       {/* ================= PROJECTS ================= */}
-      {/* <section className="py-24 px-4 sm:px-6 md:px-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">
-          Selected <span className="text-cyan-400">Projects</span>
-          </h2>
-
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[
-              "Orebi Ecommerce Platform",
-              "Rupantorito Portfolio",
-              "Realtime Chat Application",
-            ].map((project, i) => (
-              <div
-                key={i}
-                className="bg-[#020617] p-6 rounded-2xl border border-gray-800
-                hover:border-cyan-400 transition">
-                <h3 className="text-lg font-semibold mb-2">{project}</h3>
-                <p className="text-sm text-gray-400">
-                  A modern, scalable application built with React and backend integration.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>  */}
-      <section className="py-28 px-4 sm:px-6 md:px-20 bg-[#020617]">
+  <section className="py-28 px-4 sm:px-6 md:px-20 bg-[#020617]">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
       Selected <span className="text-cyan-400">Projects</span>

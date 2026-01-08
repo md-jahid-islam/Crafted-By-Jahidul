@@ -159,7 +159,7 @@ import {
               ></textarea>
 
               {/* Submit Button */}
-              <button type="submit" className=" mt-6 text-white px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition">
+              <button type="submit" className=" px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
                 Send Message
               </button>
             </form>

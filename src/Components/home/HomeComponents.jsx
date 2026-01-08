@@ -11,14 +11,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
     <section id="Home" className="relative min-h-screen flex items-center bg-[#020617] px-6 md:px-16 overflow-hidden">
       {/* Glow background */}
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 blur-3xl"></div>
-
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col-reverse md:flex-row items-center gap-14">
           
           {/* Left Content */}
           <div className="md:w-1/2 text-center md:text-left space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-              Hi, I’m{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Jahidul Islam
               </span>
@@ -49,13 +47,13 @@ import { AiOutlineArrowRight } from "react-icons/ai";
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
               <Link to="/about">
                 <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
-                  View Work
+                  View Work..!
                 </button>
               </Link>
 
               <Link to="/contact">
                 <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
-                  Hire Me..
+                  Hire Me..!
                 </button>
               </Link>
             </div>
@@ -103,13 +101,13 @@ import { AiOutlineArrowRight } from "react-icons/ai";
             </div>
 
             {/* Resume */}
-            <div className="mt-6">
-              <a href="/images/Zahidul_Islam.pdf" download className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 transition text-white">
-                Download CV <AiOutlineArrowRight />
-              </a>
-            </div>
+           <div className="mt-6 flex justify-center md:justify-start">
+           <a href="/images/Zahidul_Islam.pdf" download="Jahidul_Islam_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download Jahidul Islam Resume" className="group inline-flex items-center gap-3 px-7 py-3 text-sm sm:text-base font-medium text-white rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition-all duration-300">
+           <span>Download CV..!</span>
+            <AiOutlineArrowRight className="text-lg transform group-hover:translate-x-1 transition" />
+            </a>
+         </div>
           </div>
-
         </div>
       </div>
     </section>    
