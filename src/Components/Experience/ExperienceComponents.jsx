@@ -1,24 +1,144 @@
+// import React from "react";
+// import { motion } from "framer-motion";
+// import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-icons/fa";
+//  import { MdComputer } from "react-icons/md";
+
+//  // ======= Experience Data ======= //
+//  const experiences = [
+//   {
+//     id: 1,
+//     role: "Frontend with React developer",
+//     company: "Creative IT Institute",
+//     duration: "2024 ",
+//     description:"Developed responsive and modern user interfaces using React, Tailwind CSS, and Framer Motion. Focused on UI/UX animation and smooth interactivity.",
+//     icon: <FaReact className="text-sky-400 text-5xl" />,
+//   },
+//   {
+//     id: 2,
+//     role: "Backend Developer",
+//     company: "Creative IT Institute",
+//     duration: "2025 – Present",
+//     description:"Built scalable backend APIs using Node.js and Express. Managed databases with MongoDB and integrated authentication with Firebase and JWT.",
+//     icon: <FaNodeJs className="text-green-400 text-5xl" />,
+//   },
+//   {
+//     id: 3,
+//     role: "Full Stack Web Developer",
+//     company: "Creative IT Institute",
+//     duration: "2025",
+//     description:"Developed full-stack web applications with React, Node.js, and MongoDB. Focused on API integration, authentication, and real-time user experiences.",
+//     icon: <FaServer className="text-purple-400 text-5xl" />,
+//   },
+//   {
+//     id: 4,
+//     role: "Web Design",
+//     company: "Creative IT Institute",
+//     duration: "2023 – 2024",
+//     description:"Designed static and responsive websites using HTML, CSS, and Bootstrap. Learned layout structuring and professional design principles.",
+//     icon: <FaLaptopCode className="text-yellow-400 text-5xl" />,
+//   },
+//   {
+//     id: 4,
+//     role: "Data Entry",
+//     company: "Habiganj IT Institute",
+//     duration: "2023 – 2024",
+//     description:"Performed data entry tasks with a focus on accuracy and efficiency. Utilized various software tools to manage and organize data effectively.",
+//     icon: <FaRegKeyboard className="text-yellow-400 text-5xl" />,
+//   },
+//    {
+//     id: 4,
+//     role: "Computer Operator",
+//     company: "Habiganj IT Institute",
+//     duration: "2023",
+//     description:"Skilled in typing, data entry, MS Office, email handling, printing, scanning, software/hardware troubleshooting, internet research, and maintaining smooth office operations.",
+//     icon: <MdComputer className="text-yellow-400 text-5xl" />,
+//   },
+//  ];
+
+//  // ========== Experience Components start ========== // 
+//  const ExperienceComponents = () => {
+//   return (
+//     <>
+//     <section id="experience" className=" scroll-mt-24 relative bg-[#020617] py-20 px-6 md:px-16 overflow-hidden" >
+//       {/* ==== Background Glow ==== */}
+//       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-40"></div>
+
+//       <div className="max-w-6xl mx-auto text-center relative z-10">
+//         {/* ==== Title ==== */}
+//         <motion.h2
+//           initial={{ opacity: 0, y: -30 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.6 }}
+//           className="text-4xl md:text-5xl font-extrabold text-white mb-14">
+//           My <span className="text-blue-500">Experience.!</span>
+//         </motion.h2>
+
+//         {/* ==== Experience Grid ==== */}
+//         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+//           {experiences.map((exp, index) => (
+//             <motion.div
+//               key={exp.id}
+//               initial={{ opacity: 0, y: 40 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               transition={{ duration: 0.6, delay: index * 0.1 }}
+//               viewport={{ once: true }}
+//               className="relative bg-gray-800/60 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 shadow-md hover:shadow-blue-500/20 backdrop-blur-sm transition-all duration-500">
+//               {/* ==== Icon ==== */}
+//               <div className="flex justify-center mb-5">{exp.icon}</div>
+
+//               {/* ==== Role & Company ==== */}
+//               <h3 className="text-2xl font-semibold text-white mb-2">
+//                 {exp.role}
+//               </h3>
+//               <p className="text-blue-400 font-medium">{exp.company}</p>
+//               <p className="text-gray-400 text-sm mb-4">{exp.duration}</p>
+
+//               {/* ==== Description ==== */}
+//               <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+//                 {exp.description}
+//               </p>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//     </>
+//   );
+//  };
+
+//  // ========== Exporting the Experince Components end ========== // 
+//  export default ExperienceComponents;
+
+
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-icons/fa";
- import { MdComputer } from "react-icons/md";
+import {
+  FaReact,
+  FaNodeJs,
+  FaServer,
+  FaLaptopCode,
+  FaRegKeyboard,
+} from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
 
- // ======= Experience Data ======= //
- const experiences = [
+// ======= Experience Data ======= //
+const experiences = [
   {
     id: 1,
-    role: "Frontend with React developer",
+    role: "Frontend React Developer",
     company: "Creative IT Institute",
-    duration: "2024 ",
-    description:"Developed responsive and modern user interfaces using React, Tailwind CSS, and Framer Motion. Focused on UI/UX animation and smooth interactivity.",
-    icon: <FaReact className="text-sky-400 text-5xl" />,
+    duration: "2024",
+    description:
+      "Developed responsive and modern user interfaces using React, Tailwind CSS, and Framer Motion with strong UI/UX focus.",
+    icon: <FaReact className="text-cyan-400 text-5xl" />,
   },
   {
     id: 2,
     role: "Backend Developer",
     company: "Creative IT Institute",
     duration: "2025 – Present",
-    description:"Built scalable backend APIs using Node.js and Express. Managed databases with MongoDB and integrated authentication with Firebase and JWT.",
+    description:
+      "Built scalable backend APIs using Node.js and Express. Worked with MongoDB, Firebase authentication, and JWT.",
     icon: <FaNodeJs className="text-green-400 text-5xl" />,
   },
   {
@@ -26,75 +146,88 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-
     role: "Full Stack Web Developer",
     company: "Creative IT Institute",
     duration: "2025",
-    description:"Developed full-stack web applications with React, Node.js, and MongoDB. Focused on API integration, authentication, and real-time user experiences.",
+    description:
+      "Created full-stack applications with React, Node.js, and MongoDB focusing on real-time features and API integration.",
     icon: <FaServer className="text-purple-400 text-5xl" />,
   },
   {
     id: 4,
-    role: "Web Design",
+    role: "Web Designer",
     company: "Creative IT Institute",
     duration: "2023 – 2024",
-    description:"Designed static and responsive websites using HTML, CSS, and Bootstrap. Learned layout structuring and professional design principles.",
+    description:
+      "Designed responsive websites using HTML, CSS, Bootstrap, and modern layout principles.",
     icon: <FaLaptopCode className="text-yellow-400 text-5xl" />,
   },
   {
-    id: 4,
-    role: "Data Entry",
+    id: 5,
+    role: "Data Entry Operator",
     company: "Habiganj IT Institute",
     duration: "2023 – 2024",
-    description:"Performed data entry tasks with a focus on accuracy and efficiency. Utilized various software tools to manage and organize data effectively.",
-    icon: <FaRegKeyboard className="text-yellow-400 text-5xl" />,
+    description:
+      "Handled data entry tasks with accuracy using various office and productivity tools.",
+    icon: <FaRegKeyboard className="text-orange-400 text-5xl" />,
   },
-   {
-    id: 4,
+  {
+    id: 6,
     role: "Computer Operator",
     company: "Habiganj IT Institute",
     duration: "2023",
-    description:"Skilled in typing, data entry, MS Office, email handling, printing, scanning, software/hardware troubleshooting, internet research, and maintaining smooth office operations.",
-    icon: <MdComputer className="text-yellow-400 text-5xl" />,
+    description:
+      "Experienced in MS Office, email handling, printing, scanning, troubleshooting, and office operations.",
+    icon: <MdComputer className="text-pink-400 text-5xl" />,
   },
- ];
+];
 
- // ========== Experience Components start ========== // 
- const ExperienceComponents = () => {
+// ========== Experience Component ========== //
+const ExperienceComponents = () => {
   return (
     <>
-    <section id="experience" className=" scroll-mt-24 relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden" >
-      {/* ==== Background Glow ==== */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-40"></div>
+    <section id="experience" className="scroll-mt-24 relative bg-[#020617] py-20 px-6 md:px-16 overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 blur-3xl opacity-40" />
 
-      <div className="max-w-6xl mx-auto text-center relative z-10">
-        {/* ==== Title ==== */}
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-white mb-14">
-          My <span className="text-blue-500">Experience.!</span>
+          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-14">
+          My <span className="text-cyan-400">Experience..!</span>
         </motion.h2>
 
-        {/* ==== Experience Grid ==== */}
+        {/* Experience Grid */}
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="relative bg-gray-800/60 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 shadow-md hover:shadow-blue-500/20 backdrop-blur-sm transition-all duration-500">
-              {/* ==== Icon ==== */}
-              <div className="flex justify-center mb-5">{exp.icon}</div>
+              className="bg-[#020617]/80 p-8 rounded-2xl border shadow-lg hover:shadow-cyan-500/20 
+              hover:border-cyan-400 transition-all duration-500">
+              {/* Icon */}
+              <div className="flex justify-center mb-5">
+                {exp.icon}
+              </div>
 
-              {/* ==== Role & Company ==== */}
-              <h3 className="text-2xl font-semibold text-white mb-2">
+              {/* Role */}
+              <h3 className="text-xl font-semibold text-white mb-1">
                 {exp.role}
               </h3>
-              <p className="text-blue-400 font-medium">{exp.company}</p>
-              <p className="text-gray-400 text-sm mb-4">{exp.duration}</p>
 
-              {/* ==== Description ==== */}
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              <p className="text-cyan-400 font-medium">
+                {exp.company}
+              </p>
+
+              <p className="text-gray-400 text-sm mb-4">
+                {exp.duration}
+              </p>
+
+              {/* Description */}
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {exp.description}
               </p>
             </motion.div>
@@ -106,5 +239,4 @@ import { FaReact, FaNodeJs, FaServer, FaLaptopCode, FaRegKeyboard } from "react-
   );
  };
 
- // ========== Exporting the Experince Components end ========== // 
  export default ExperienceComponents;

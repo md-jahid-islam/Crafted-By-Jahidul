@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
  const AbouteComponents = () => {
   return (
+    <>
     <div className="bg-[#0b0f19] text-white font-sans">
-
       {/* ================= HERO ================= */}
       <section className="min-h-screen flex items-center px-4 sm:px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -57,7 +57,7 @@ import { Link } from "react-router-dom";
             </h2>
 
             <p className="text-gray-400 leading-relaxed">
-              I’m a professional full stack web developer with over 2 years of hands-on
+              I’m a professional full stack web developer of hands-on
               experience building production-ready applications. I focus on clean code,
               maintainable architecture, and polished user experiences.
             </p>
@@ -182,7 +182,8 @@ import { Link } from "react-router-dom";
     </div>
    </div>
    </section>
-    </div>
+    </div>   
+    </>
   );
  };
 

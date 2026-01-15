@@ -120,9 +120,9 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
  const ProjectsComponents = () => {
   return (
     <>
-    <section id="Projects" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden">
+    <section id="Projects" className="relative bg-[rgb(0,10,20)] from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-30"></div>
+      <div className="absolute inset-0 bg-[rgb(0,10,20)] from-cyan-500/10 via-blue-500/10 to-purple-500/10 blur-3xl opacity-40"></div>
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Section Title */}

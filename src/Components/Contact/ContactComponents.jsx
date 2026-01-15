@@ -64,7 +64,7 @@ import {
 
   return (
     <>
-      <section id="Contact" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 px-6 md:px-16 overflow-hidden">
+      <section id="Contact" className="relative bg-gradient-to-br from-[#0f172a] via-[#020617] to-[#0f172a] py-20 px-6 md:px-16 overflow-hidden">
         {/* Background Glow */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-30"></div>
 
@@ -143,8 +143,11 @@ import {
             viewport={{ once: true }}
             className="space-y-8">
             {/* Contact Form */}
+              <div>
+                <h2 className="text-white font-bold text-3xl ">  Let’s Work Together:</h2>
+                </div>
             <form onSubmit={handleSubmit} className="bg-gray-800/60 p-8 rounded-2xl border border-gray-700 backdrop-blur-sm shadow-md hover:shadow-blue-500/20 transition">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">               
                 <input 
                   type="text"
                   name="name"
@@ -180,7 +183,7 @@ import {
               ></textarea>
 
               {/* Submit Button */}
-              <button type="submit" className=" px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
+              <button type="submit" className=" px-8 py-3 mt-2.5 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
                 Send Message
               </button>
             </form>
