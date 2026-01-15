@@ -27,10 +27,10 @@ import { AiOutlineArrowRight } from "react-icons/ai";
                 options={{
                   strings: [
                     "Front-End Developer..!",
-                    "Front-End Learned Creative IT Institute From Uttara , Dhaka",
+                    "Front-End Learned Creative IT Institute ",
                     "React Tailwind.css Specialist UX & UI Design",
                     "Full Stack Developer Node.js..!",
-                    "Node.js Learned Creative IT Institute  From Uttara , Dhaka",
+                    "Node.js Learned Creative IT Institute ",
                   ],
                   autoStart: true,
                   loop: true,
@@ -89,10 +89,10 @@ import { AiOutlineArrowRight } from "react-icons/ai";
                 options={{
                   strings: [
                     "Front-End Developer..!",
-                    "Front-End Learned Creative IT Institute From Uttara , Dhaka",
+                    "Front-End Learned Creative IT Institute ",
                     "React Tailwind.css Specialist UX & UI Design..",
                     "Full Stack Developer Node.js ..!",
-                    "Node.js Learned Creative IT Institute  From Uttara , Dhaka",
+                    "Node.js Learned Creative IT Institute ",
                   ],
                   autoStart: true,
                   loop: true,
@@ -112,6 +112,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
           </div>
         </div>
       </div>
+      
     </section>    
     </>
   );

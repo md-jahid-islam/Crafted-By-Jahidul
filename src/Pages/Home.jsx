@@ -6,13 +6,17 @@ import Projects from './Projects'
 import ContactComponents from '../Components/Contact/ContactComponents'
 import Experience from './Experience'
 import AchievementsComponents from '../Components/Achievements/AchievementsComponents'
+import Service from './Service'
+import Garments from './Garments'
 
  // ========== Home page start ========== // 
  const Home = () => {
   return (
     <>
       <HomeComponents />
-      <About />
+      <About />  
+      <Service/>
+      <Garments/>   
       <Skills />
       <Projects />
       <Experience/>

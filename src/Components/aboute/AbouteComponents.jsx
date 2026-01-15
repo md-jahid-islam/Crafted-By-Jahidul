@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
             </h1>
 
             <p className="text-gray-400 max-w-xl text-base md:text-lg leading-relaxed">
-              Hi, I’m <span className="text-white font-semibold">Jahidul Islam</span> —  
+              I’m <span className="text-white font-semibold">Jahidul Islam</span> —  
               a results-driven developer specializing in scalable, responsive, and
               high-performance applications using React, Node.js & modern UI systems.
             </p>
@@ -174,7 +174,7 @@ import { Link } from "react-router-dom";
 
           <div className="mt-6 relative z-10">
             <span className="inline-block text-cyan-400 text-sm font-medium group-hover:tracking-wide transition-all">
-          <Link to={"/Projects"}> View Project →</Link>
+          <Link to={"#"}> View Project →</Link>
             </span>
           </div>
         </div>

@@ -1,26 +1,44 @@
-import {  } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
- 
- // ============ Navbar Components start =========== // 
- const Navbar = () => {
- // =========== Mobile menu state =========== // 
- const [isMenuOpen, setIsMenuOpen] = useState(false);
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
- // ============ Smooth scroll to section =========== // 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const yOffset = -70; 
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // ===== Smart Scroll Handler ======== // 
+  const handleNavigation = (id) => {
+    setIsMenuOpen(false);
+
+    // ========== If already on homepage ========= // 
+    if (location.pathname === "/") {
+      scrollToSection(id);
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        scrollToSection(id);
+      }, 300);
     }
   };
- 
- // ============ Navigations Links  =========== // 
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    const yOffset = -80;
+    const y =
+      section.getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
+
   const navLinks = [
     { name: "Home", id: "Home" },
     { name: "About", id: "About" },
+    { name: "Services", id: "Services" },
+    { name: "Garments", id: "Garments" },
     { name: "Skills", id: "Skills" },
     { name: "Projects", id: "Projects" },
     { name: "Experience", id: "Experience" },
@@ -28,60 +46,66 @@ import { Link } from "react-router-dom";
     { name: "Contact", id: "Contact" },
   ];
 
-  return (
+  return (  
     <>
-    <nav className=" bg-[#1F2937] shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}        
-          <div className="flex items-center gap-5">
-          <Link to="/"> 
-          <img className="w-12 h-12 rounded-full" src="/images/JA (3).png"alt="logo"/>
-          </Link>
-          <Link className="text-2xl text-[#c6c6c6]" to="/">
-          Crafted By Jahidul
-          </Link>
-          </div>
-          {/* Desktop Menu */}
-          <div className="hidden lg:block">
-            <ul className="flex justify-center items-center space-x-7">
-              {navLinks.map((link) => (
-                <li key={link.name}>
-                  <button onClick={() => scrollToSection(link.id)} className="py-2 px-3 text-gray-300 hover:text-white hover:underline hover:underline-offset-4 transition duration-300" >
-                  {link.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <nav className="sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" >
-            {isMenuOpen ? "✖" : "☰"}
-            </button>
-          </div>
-        </div>
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src="/images/JA (3).png"
+            alt="logo"
+            className="w-10 h-10 rounded-full"
+          />
+          <span className="text-lg font-semibold text-gray-200 hover:text-cyan-400 transition">
+            Crafted By Jahidul
+          </span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex gap-8">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <button
+                onClick={() => handleNavigation(link.id)}
+                className="relative text-gray-300 hover:text-cyan-400 transition
+                after:absolute after:left-0 after:-bottom-1 after:h-[2px]
+                after:w-0 after:bg-cyan-400 hover:after:w-full after:transition-all"
+              >
+                {link.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile Button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden text-gray-300 text-2xl"
+        >
+          {isMenuOpen ? "✕" : "☰"}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="lg:hidden bg-[#020617] border-t border-gray-800 px-4 py-4 space-y-2">
           {navLinks.map((link) => (
-            <button key={link.name} onClick={() => {
-                scrollToSection(link.id);
-                setIsMenuOpen(false);
-              }}
-              className="block w-full text-left rounded-md text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 transition duration-300">
+            <button
+              key={link.id}
+              onClick={() => handleNavigation(link.id)}
+              className="block w-full text-left px-4 py-2 rounded-lg
+              text-gray-300 hover:bg-gray-800 hover:text-cyan-400 transition"
+            >
               {link.name}
             </button>
           ))}
         </div>
       )}
-     </nav>
+    </nav>   
     </>
   );
  };
 
- // ============ Exporting the Navbar Components end ============ //
  export default Navbar;

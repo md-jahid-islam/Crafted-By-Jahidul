@@ -8,6 +8,9 @@ import Projects from './Pages/Projects'
 import ExperienceComponents from './Components/Experience/ExperienceComponents'
 import AchievementsComponents from './Components/Achievements/AchievementsComponents'
 import ContactComponents from './Components/Contact/ContactComponents'
+import Service from './Pages/Service'
+import Garments from './Pages/Garments'
+import QuickQuote from './Pages/QuickQuote'
 
  function App() {
 
@@ -18,6 +21,9 @@ import ContactComponents from './Components/Contact/ContactComponents'
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='/About' element={<About />} />
+            <Route path='/Service' element = {<Service/>}/>
+            <Route path='/QuickQuote' element = {<QuickQuote/>}/>
+            <Route path='/Garments' element = {<Garments/>}/>
             <Route path='/Skills' element={<Skills />} />
             <Route path='/Projects' element={<Projects />} />
             <Route path='/Experience' element={<ExperienceComponents />} />
