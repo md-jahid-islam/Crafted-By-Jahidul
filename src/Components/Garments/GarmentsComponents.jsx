@@ -124,7 +124,7 @@ const products = [
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-            Order-Based <span className="text-blue-500">Garments Production</span>
+            Order-Based <span className="text-blue-500">Garments Services <p className="text-white">Production</p></span>
           </h2>
           <p className="mt-5 text-gray-400 max-w-3xl mx-auto">
             Small-batch manufacturing with MOQ 25 pcs. Custom labels, tags,
