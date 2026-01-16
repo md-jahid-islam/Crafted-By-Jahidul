@@ -2,6 +2,8 @@ import React from "react";
 import { BsArrowDownRightCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, FaEnvelopeOpenText, FaBullhorn, FaPalette, } from "react-icons/fa";
+import FuturedWorkComponents from "../FuturedWork/FuturedWorkComponents";
+import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
 
  const coreServices = [
   {
@@ -44,7 +46,7 @@ import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, FaEnve
 
  const bundles = [
   {
-    title: "Website",
+    title: "Website Development",
     icon: <FaEnvelopeOpenText />,
     points: [
       "Next.js frontend with clean UX & UI",
@@ -145,28 +147,31 @@ import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, FaEnve
                  <li key={idx}>✔ {point}</li>
                 ))}
               </ul>
-              <a href="#Contact" className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition">
-              <span className="text-lg">{bundle.icon}</span> Contact about “{bundle.title}”
+             <a href="/contact" className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition">
+                Contact about this bundle
+                <BsArrowDownRightCircle />
               </a>
             </motion.div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-24">
+       <div className="text-center mt-24">
           <motion.a
-            href="#Contact"
+            href="/contact"
             whileHover={{ scale: 1.08 }}
-            className="inline-flex items-center justify-center px-8 md:px-12 py-4 rounded-full
+            className="inline-flex items-center justify-center px-10 py-4 rounded-full
             bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500
-            text-white font-semibold shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition gap-3">
-            <h2 className="text-lg md:text-2xl font-bold flex items-center gap-2">
-              Discuss Your Project <BsArrowDownRightCircle className="text-2xl md:text-3xl" />
-            </h2>
+            text-white font-semibold shadow-lg shadow-cyan-500/30
+            hover:shadow-cyan-500/50 transition gap-3" >
+            Discuss Your Project
+            <BsArrowDownRightCircle className="text-2xl" />
           </motion.a>
         </div>
       </div>
-    </section>   
+    </section>  
+    <FuturedWorkComponents/> 
+    <WhatclientsComponents/>
     </>
   );
  };

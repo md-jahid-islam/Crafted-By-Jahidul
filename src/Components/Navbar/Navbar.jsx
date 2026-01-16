@@ -66,12 +66,10 @@ const Navbar = () => {
         <ul className="hidden lg:flex gap-8">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <button
-                onClick={() => handleNavigation(link.id)}
+              <button onClick={() => handleNavigation(link.id)}
                 className="relative text-gray-300 hover:text-cyan-400 transition
                 after:absolute after:left-0 after:-bottom-1 after:h-[2px]
-                after:w-0 after:bg-cyan-400 hover:after:w-full after:transition-all"
-              >
+                after:w-0 after:bg-cyan-400 hover:after:w-full after:transition-all">
                 {link.name}
               </button>
             </li>

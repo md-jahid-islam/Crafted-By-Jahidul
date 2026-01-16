@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { BsArrowDownRightCircleFill } from "react-icons/bs";
 
-const products = [
+ const products = [
   {
     name: "T-Shirt",
     moq: "25 pcs",
@@ -124,7 +125,7 @@ const products = [
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-            Order-Based <span className="text-blue-500">Garments Services <p className="text-white">Production</p></span>
+            Order-Based <span className="text-blue-500">Garments Production </span>
           </h2>
           <p className="mt-5 text-gray-400 max-w-3xl mx-auto">
             Small-batch manufacturing with MOQ 25 pcs. Custom labels, tags,
@@ -156,12 +157,14 @@ const products = [
                 ))}
               </ul>
 
-              <div className="flex gap-4 mt-6">
-               
-             <Link className="text-blue-400 hover:underline" to={"/QuickQuote"}>Request quote →</Link>
-             <Link className="text-blue-400 hover:underline" to={"/Contact"}>Contact → </Link>
-
-              </div>
+             <div className="flex gap-6 mt-6">
+              <Link to="/QuickQuote" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-300 transition">Quote
+              <BsArrowDownRightCircleFill className="text-lg" />
+              </Link>
+              <Link to="/Contact" className="inline-flex items-center gap-2 text-blue-400 hover:text-cyan-300 transition"> Contact
+              <BsArrowDownRightCircleFill className="text-lg" />
+              </Link>
+             </div>
             </motion.div>
           ))}
         </div>      
