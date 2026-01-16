@@ -147,7 +147,7 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
                  <li key={idx}>✔ {point}</li>
                 ))}
               </ul>
-             <a href="/contact" className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition">
+             <a href="/Contact" className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition">
                 Contact about this bundle
                 <BsArrowDownRightCircle />
               </a>
@@ -158,7 +158,7 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
         {/* CTA */}
        <div className="text-center mt-24">
           <motion.a
-            href="/contact"
+            href="/Contact"
             whileHover={{ scale: 1.08 }}
             className="inline-flex items-center justify-center px-10 py-4 rounded-full
             bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500
