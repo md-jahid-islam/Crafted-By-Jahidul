@@ -1,14 +1,7 @@
 import React from "react";
 import { BsArrowDownRightCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
-import {
-  FaCode,
-  FaRocket,
-  FaShoppingCart,
-  FaShieldAlt,
-  FaTools,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, } from "react-icons/fa";
 
  const coreServices = [
   {
@@ -83,9 +76,9 @@ const bundles = [
       "2–3 revision rounds",
     ],
   },
-];
+ ];
 
-const Service = () => {
+ const Service = () => {
   return (
     <>
     <section id="Services" className="relative bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] py-24 px-6 md:px-16 overflow-hidden">
@@ -114,8 +107,7 @@ const Service = () => {
               viewport={{ once: true }}
               className="bg-gray-900/70 backdrop-blur-xl border border-gray-700
               rounded-2xl p-8 hover:border-blue-500/60
-              hover:shadow-blue-500/20 hover:scale-105 transition"
-            >
+              hover:shadow-blue-500/20 hover:scale-105 transition">
               <div className={`text-5xl mb-5 ${item.color}`}>{item.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-3">
                 {item.title}
@@ -127,8 +119,8 @@ const Service = () => {
 
         {/* Solution Bundles */}
         <div className="text-center mb-16">
-          <h3 className="text-3xl md:text-4xl font-bold text-white">
-           Web Solution <span className="text-cyan-400">Bundles</span>
+          <h3 className="text-3xl md:text-4xl font-bold text-white">Website & creative bundles
+           Web Solution 
           </h3>
           <p className="text-gray-400 mt-4">
             Pick what you need and contact directly — modern, clean and effective.
@@ -143,19 +135,15 @@ const Service = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
               viewport={{ once: true }}
-              className="bg-gray-900/70 border border-gray-700 rounded-2xl p-8 hover:border-cyan-400 transition"
-            >
+              className="bg-gray-900/70 border border-gray-700 rounded-2xl p-8 hover:border-cyan-400 transition">
               <h4 className="text-xl font-semibold text-white mb-5">{bundle.title}</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 {bundle.points.map((point, idx) => (
-                  <li key={idx}>✔ {point}</li>
+                 <li key={idx}>✔ {point}</li>
                 ))}
               </ul>
-              <a
-                href="#Contact"
-                className="inline-block mt-6 text-cyan-400 hover:underline"
-              >
-                Contact about “{bundle.title}”
+              <a href="#Contact" className="inline-block mt-6 text-cyan-400 hover:underline">
+              Contact about “{bundle.title}”
               </a>
             </motion.div>
           ))}
@@ -168,8 +156,7 @@ const Service = () => {
             whileHover={{ scale: 1.08 }}
             className="inline-flex items-center justify-center px-8 md:px-12 py-4 rounded-full
             bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500
-            text-white font-semibold shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition gap-3"
-          >
+            text-white font-semibold shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition gap-3">
             <h2 className="text-lg md:text-2xl font-bold flex items-center gap-2">
               Discuss Your Project <BsArrowDownRightCircle className="text-2xl md:text-3xl" />
             </h2>

@@ -11,6 +11,9 @@ import ContactComponents from './Components/Contact/ContactComponents'
 import Service from './Pages/Service'
 import Garments from './Pages/Garments'
 import QuickQuote from './Pages/QuickQuote'
+import Footer from './Pages/Footer'
+import Process from './Pages/Process'
+import FQA from './Pages/FQA'
 
  function App() {
 
@@ -28,7 +31,11 @@ import QuickQuote from './Pages/QuickQuote'
             <Route path='/Projects' element={<Projects />} />
             <Route path='/Experience' element={<ExperienceComponents />} />
             <Route path='/Achievements' element={<AchievementsComponents />} />
+            <Route path='/FQA' element={<FQA />} />            
+            <Route path='/Process' element={<Process />} />
             <Route path='/Contact' element={<ContactComponents />} />
+            <Route path='/Footer' element={<Footer />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

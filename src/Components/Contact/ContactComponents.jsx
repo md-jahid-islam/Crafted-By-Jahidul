@@ -2,12 +2,27 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaGithub,
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedinIn,
  } from "react-icons/fa";
  import { toast, ToastContainer } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
+import { Mail } from "lucide-react";
  
  // =============== Contact Components start ========= // 
  const ContactComponents = () => {
+   const email = "jahidulislamwebbd@gmail.com";
+ const [copied, setCopied] = useState(false);
+
+ const handleEmailCopy = () => {
+  navigator.clipboard.writeText(email);
+  setCopied(true);
+
+  setTimeout(() => {
+    setCopied(false);
+  }, 2000);
+ };
   // ============ 🧩 Form State ============ // 
   const [formData, setFormData] = useState({
     name: "",
@@ -121,18 +136,38 @@ import {
             </a>
             </div>
             </div>
-            {/* Social Links */}
-            <div className="flex gap-5 pt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500 text-2xl transition">
+           {/* Social Icons */}            
+            <div className="flex gap-5 justify-center md:justify-start pt-6 text-2xl text-gray-300">
+             <a href="https://www.linkedin.com/in/jahidul-islam-a5021b325" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+              <FaLinkedinIn />
+              </a>
+              <a href="https://www.instagram.com/jahidulfsdev/" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition" >
+              <FaInstagram />
+              </a>           
+              <a href="https://www.facebook.com/jahidul.islam.98621/" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition">
               <FaFacebook />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-400 text-2xl transition">
-              <FaLinkedin />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-100 text-2xl transition">
+              <a href="https://github.com/md-jahid-islam" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
               <FaGithub />
               </a>
-            </div>
+
+              {/* ✅ EMAIL COPY BUTTON */}
+              <button onClick={handleEmailCopy}className="hover:text-cyan-400 transition relative">
+                <Mail />
+                {copied && (
+                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-sm text-cyan-400">
+                  Copied!
+                  </span>
+                )}
+               </button>
+
+                 <a href="https://wa.me/message/O3CTLULQDASLC1" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
+                 <FaWhatsapp />
+                 </a>
+               </div>
+               <div>
+                <p>Live chat available (Crisp) when enabled.</p>
+               </div>
           </motion.div>
 
           {/* Right Side - Contact Form + Google Map */}

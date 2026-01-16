@@ -1,11 +1,25 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FaFacebook, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Mail } from "lucide-react";
 
  const HomeComponents = () => {
+ const email = "jahidulislamwebbd@gmail.com";
+ const [copied, setCopied] = useState(false);
+
+ const handleEmailCopy = () => {
+  navigator.clipboard.writeText(email);
+  setCopied(true);
+
+  setTimeout(() => {
+    setCopied(false);
+  }, 2000);
+ };
+
   return (
     <>
     <section id="Home" className="relative min-h-screen flex items-center bg-[#020617] px-6 md:px-16 overflow-hidden">
@@ -46,7 +60,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-              <Link to="/about">
+              <Link to="/Projects">
                 <button className="px-8 py-3 rounded-full border border-gray-700 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.25)] transition text-white">
                   View Work..!
                 </button>
@@ -59,20 +73,36 @@ import { AiOutlineArrowRight } from "react-icons/ai";
               </Link>
             </div>
 
-            {/* Social Icons */}
+            {/* Social Icons */}            
             <div className="flex gap-5 justify-center md:justify-start pt-6 text-2xl text-gray-300">
-              <a href="https://www.facebook.com/jahidul.islam.98621/" target="_blank" rel="noreferrer"className="hover:text-blue-500 transition">
-                <FaFacebook />
+             <a href="https://www.linkedin.com/in/jahidul-islam-a5021b325" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
+              <IoLogoLinkedin />
+              </a>
+              <a href="https://www.instagram.com/jahidulfsdev/" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition" >
+              <FaInstagram />
+              </a>           
+              <a href="https://www.facebook.com/jahidul.islam.98621/" target="_blank" rel="noreferrer" className="hover:text-blue-500 transition">
+              <FaFacebook />
               </a>
               <a href="https://github.com/md-jahid-islam" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
-                <FaGithub />
+              <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/jahidul-islam-a5021b325" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
-                <IoLogoLinkedin />
-              </a>
-            </div>
-          </div>
 
+              {/* ✅ EMAIL COPY BUTTON */}
+              <button onClick={handleEmailCopy}className="hover:text-cyan-400 transition relative">
+                <Mail />
+                {copied && (
+                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-sm text-cyan-400">
+                  Copied!
+                  </span>
+                )}
+               </button>
+
+                 <a href="https://wa.me/message/O3CTLULQDASLC1" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
+                 <FaWhatsapp />
+                 </a>
+               </div>
+          </div>
           {/* Right Profile */}
           <div className="md:w-1/2 flex flex-col items-center">
             <div className="relative">
@@ -111,8 +141,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
          </div>
           </div>
         </div>
-      </div>
-      
+      </div>     
     </section>    
     </>
   );
