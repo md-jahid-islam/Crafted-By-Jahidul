@@ -1,7 +1,7 @@
 import React from "react";
 import { BsArrowDownRightCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, } from "react-icons/fa";
+import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, FaEnvelopeOpenText, FaBullhorn, FaPalette, } from "react-icons/fa";
 
  const coreServices = [
   {
@@ -42,9 +42,10 @@ import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, } from
   },
 ];
 
-const bundles = [
+ const bundles = [
   {
     title: "Website",
+    icon: <FaEnvelopeOpenText />,
     points: [
       "Next.js frontend with clean UX & UI",
       "Custom stack or CMS (WordPress / Sanity)",
@@ -56,6 +57,7 @@ const bundles = [
   },
   {
     title: "Digital Marketing",
+    icon: <FaBullhorn />,
     points: [
       "Channel planning & budgeting",
       "FB / IG setup with pixels",
@@ -67,6 +69,7 @@ const bundles = [
   },
   {
     title: "Graphics & Branding",
+    icon: <FaPalette />,
     points: [
       "Logo, colors & typography",
       "Brand kit & usage guide",
@@ -142,8 +145,8 @@ const bundles = [
                  <li key={idx}>✔ {point}</li>
                 ))}
               </ul>
-              <a href="#Contact" className="inline-block mt-6 text-cyan-400 hover:underline">
-              Contact about “{bundle.title}”
+              <a href="#Contact" className="inline-flex items-center gap-2 mt-6 text-cyan-400 hover:text-cyan-300 transition">
+              <span className="text-lg">{bundle.icon}</span> Contact about “{bundle.title}”
               </a>
             </motion.div>
           ))}

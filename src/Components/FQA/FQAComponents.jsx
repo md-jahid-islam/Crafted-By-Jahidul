@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
  const faqData = [
@@ -84,7 +85,18 @@ import { Link } from "react-router-dom";
         </div>
 
         {/* Search */}
-        <input type="text" placeholder="Search by question or keyword..." className="w-full mb-6 px-4 py-3 rounded-lg bg-[#020617] border border-gray-700 focus:outline-none focus:border-cyan-400" value={search}onChange={(e) => setSearch(e.target.value)}/>
+<div className="relative mb-6">
+  <FaSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
+
+  <input
+    type="text"
+    placeholder="Search by question or keyword..."
+    className="w-full pl-11 pr-4 py-3 rounded-lg bg-[#020617] border border-gray-700
+    focus:outline-none focus:border-cyan-400 text-gray-300 placeholder-gray-500"
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+</div>
         {/* Filters */}
         <div className="flex flex-wrap gap-3 mb-8">
           {categories.map((cat) => (

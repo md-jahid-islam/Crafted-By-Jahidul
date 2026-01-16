@@ -5,7 +5,6 @@ import Skills from './Skills'
 import Projects from './Projects'
 import ContactComponents from '../Components/Contact/ContactComponents'
 import Experience from './Experience'
-import AchievementsComponents from '../Components/Achievements/AchievementsComponents'
 import Service from './Service'
 import Garments from './Garments'
 
@@ -20,7 +19,6 @@ import Garments from './Garments'
       <Skills />
       <Projects />
       <Experience/>
-      <AchievementsComponents />
       <ContactComponents />
     </>
   )

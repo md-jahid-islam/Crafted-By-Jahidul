@@ -158,8 +158,8 @@ const products = [
 
               <div className="flex gap-4 mt-6">
                
-             <Link className="text-blue-400 hover:underline" to={"/QuickQuote"}>Request quote</Link>
-             <Link className="text-blue-400 hover:underline" to={"/Contact"}>Contact</Link>
+             <Link className="text-blue-400 hover:underline" to={"/QuickQuote"}>Request quote →</Link>
+             <Link className="text-blue-400 hover:underline" to={"/Contact"}>Contact → </Link>
 
               </div>
             </motion.div>
