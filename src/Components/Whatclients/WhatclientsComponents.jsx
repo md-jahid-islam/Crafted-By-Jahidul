@@ -216,7 +216,7 @@ const WhatclientsComponents = () => {
                 <p className="text-gray-300 leading-relaxed mb-6">
                   “{item.quote}”
                 </p>
-                <div>
+                <div className=" mt-5 ">
                   <h4 className="text-white font-semibold">{item.name}</h4>
                   <p className="text-gray-400 text-sm">{item.role}</p>
                 </div>

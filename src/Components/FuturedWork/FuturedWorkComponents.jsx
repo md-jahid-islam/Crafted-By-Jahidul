@@ -64,16 +64,13 @@ const steps = [
             </p>
           </div>
 
-          <a
-            href="#Portfolio"
-            className="inline-flex items-center gap-2 mt-6 md:mt-0 text-cyan-400 hover:text-cyan-300 transition"
-          >
+          <a href="/Portfolio" className="inline-flex items-center gap-2 mt-6 md:mt-0 text-cyan-400 hover:text-cyan-300 transition">
             See all <BsArrowRight />
           </a>
         </div>
 
         {/* ===== Projects ===== */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-5 ">
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
@@ -85,12 +82,7 @@ const steps = [
               hover:border-cyan-400 hover:shadow-cyan-500/20 transition"
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                />
+              <div className="relative h-48 overflow-hidden"> <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               </div>
 
@@ -106,7 +98,7 @@ const steps = [
         </div>
 
         {/* ===== Process ===== */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-5 ">
           <h3 className="text-3xl md:text-4xl font-bold text-white">
             A process that keeps you <span className="text-cyan-400">in the loop</span>
           </h3>
@@ -144,7 +136,7 @@ const steps = [
           <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
             Book a free 15-min call
             </Link> 
-            <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
+            <Link className="inline-flex mt-5 items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
               Ask about timeline & estimate →            
             </Link> 
 

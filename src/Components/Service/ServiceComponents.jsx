@@ -91,7 +91,7 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-purple-500/10 blur-3xl opacity-40" />
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Hero */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-5">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
          Web Services I <span className="text-blue-500">Deliver</span>
           </h2>
@@ -102,7 +102,7 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
         </div>
 
         {/* Core Services */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-28">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-8">
           {coreServices.map((item, i) => (
             <motion.div
               key={i}
@@ -156,7 +156,7 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
         </div>
 
         {/* CTA */}
-       <div className="text-center mt-24">
+       <div className="text-center mt-10">
           <motion.a
             href="/Contact"
             whileHover={{ scale: 1.08 }}

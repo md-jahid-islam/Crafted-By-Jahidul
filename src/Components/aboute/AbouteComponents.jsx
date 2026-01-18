@@ -138,7 +138,7 @@ import { Link } from "react-router-dom";
       {/* ================= PROJECTS ================= */}
   <section className="py-28 px-4 sm:px-6 md:px-20 bg-[#020617]">
   <div className="max-w-6xl mx-auto">
-    <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-7">
       Selected <span className="text-cyan-400">Projects.!</span>
     </h2>
 
