@@ -13,10 +13,10 @@ import Garments from './Garments'
     <>
       <HomeComponents />
       <About />  
-      <Service/>
-      <Garments/>   
       <Skills />
       <Projects />
+      <Service/>
+      <Garments/>   
       <ContactComponents />
     </>
   )

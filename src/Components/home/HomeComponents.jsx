@@ -106,8 +106,8 @@ import { Mail } from "lucide-react";
           {/* Right Profile */}
           <div className="md:w-1/2 flex flex-col items-center">
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 blur-xl opacity-30"></div>
-              <img src="/images/Profile.jpg" alt="Jahidul Islam" className="relative w-44 h-44 md:w-60 md:h-60 rounded-full object-cover border-4 border-gray-800 hover:scale-105 transition-transform"/>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r blur-xl opacity-30"></div>
+              <img src="/images/Gemini.png" alt="Jahidul Islam" className="w-72 md:w-[420px] rounded-3xl border border-gray-700 shadow-2xl"/>
             </div>
 
             <div className="mt-6 text-center space-y-2">

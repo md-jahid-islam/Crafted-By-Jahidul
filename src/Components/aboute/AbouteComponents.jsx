@@ -42,7 +42,7 @@ import { Link } from "react-router-dom";
 
           {/* Image */}
           <div className="flex justify-center">
-            <img src="/images/jahid.png" alt="Jahidul Islam" className="w-72 md:w-[420px] rounded-3xl border border-gray-700 shadow-2xl" />
+            <img src="/images/Gemini.png" alt="Jahidul Islam" className="w-72 md:w-[420px] rounded-3xl border border-gray-700 shadow-2xl" />
           </div>
         </div>
       </section>
