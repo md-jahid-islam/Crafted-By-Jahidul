@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 import { IoLogoLinkedin } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Mail } from "lucide-react";
@@ -97,17 +98,28 @@ import { Mail } from "lucide-react";
                   </span>
                 )}
                </button>
-
+               
+                {/* Email */}          
+           <div className="flex items-center gap-3">
+           {/* Email Icon Only */}
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jahidulislamwebbd@gmail.com&su=Project%20Discussion&body=Hello%20Jahidul,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.%0D%0A%0D%0AThanks" target="_blank" rel="noopener noreferrer" aria-label="Send Email via Gmail" className="relative group text-blue-400 text-xl hover:text-blue-500 transition">
+            <TfiEmail />
+           {/* Tooltip */}
+           <span className="absolute -top-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+            Send Email
+           </span>
+             </a>
+              </div>
                  <a href="https://wa.me/message/O3CTLULQDASLC1" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
                  <FaWhatsapp />
                  </a>
-               </div>
+          </div>               
           </div>
           {/* Right Profile */}
           <div className="md:w-1/2 flex flex-col items-center">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r blur-xl opacity-30"></div>
-              <img src="/images/Gemini.png" alt="Jahidul Islam" className="w-72 md:w-[420px] rounded-3xl border border-gray-700 shadow-2xl"/>
+              <img src="/images/Gemini.png" alt="Jahidul Islam" className="w-72 md:w-[420px] mt-5 rounded-3xl border border-gray-700 shadow-2xl"/>
             </div>
 
             <div className="mt-6 text-center space-y-2">

@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
               Full Stack Web Developer.!
             </span>
 
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+            <h1 className="text-3xl mt-5 md:text-6xl font-extrabold leading-tight">
               Building Modern <br />
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Web Experiences
@@ -48,7 +48,7 @@ import { Link } from "react-router-dom";
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="py-24 px-4 sm:px-6 md:px-20 bg-[#0f172a]">
+      <section className="py-24 px-4 sm:px-6 md:px-20 bg-[#0f172a] relative bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] rounded-2xl py-8 px-6 md:px-16 ">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
 
           <div className="space-y-6">
@@ -131,8 +131,27 @@ import { Link } from "react-router-dom";
       <span>Clean Code & Best Practices</span>
     </li>
    </ul>
-        </div>    
-        </div>
+  </div>    
+  </div>
+  
+ <marquee> 
+  <div className="  flex mt-8 flex-wrap gap-3 text-base sm:text-lg md:text-xl ">
+  <h2>✔React </h2> 
+  <h2>✔Javascript</h2>
+  <h2>✔Tailwind.css</h2>
+  <h2>✔Javascrip</h2>
+  <h2>✔Node.js</h2>
+  <h2>✔Next.js</h2>
+  <h2>✔Express.js</h2>
+  <h2>✔MongoDB</h2>
+  <h2>✔PostgreSQL</h2>
+  <h2>✔AWS</h2>
+  <h2>✔Framer</h2>
+  <h2>✔Motion</h2>
+  </div>
+
+ </marquee>
+
       </section>
 
       {/* ================= PROJECTS ================= */}

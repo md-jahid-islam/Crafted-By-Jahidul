@@ -2,8 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsArrowRight, } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { FaQuoteLeft } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/pagination";
 
-const projects = [
+ const projects = [
   {
     id: 1,
     title: "Project 1",
@@ -22,9 +27,9 @@ const projects = [
     stack: "React / Next.js • Node.js / Express • Tailwind CSS",
     image: "/images/project-3.png",
   },
-];
+ ];
 
-const steps = [
+ const steps = [
   {
     step: "Step 1",
     title: "Discover",
@@ -47,6 +52,56 @@ const steps = [
   },
  ];
 
+ const testimonials = [
+  {
+    quote:
+      "Pixel-perfect UI and clean API integration. The handoff docs made future work extremely easy.",
+    name: "Saif Chowdhury",
+    role: "Tech Lead, Fintech",
+  },
+  {
+    quote:
+      "Our ad creatives finally performed above benchmark. CPA dropped ~28% in two weeks.",
+    name: "Tasnia Ahmed",
+    role: "Growth Manager, D2C Brand",
+  },
+  {
+    quote:
+      "Clear communication and predictable delivery with zero surprises.",
+    name: "Raihan Karim",
+    role: "Founder, SaaS Startup",
+  },
+  {
+    quote:
+      "Fast, modern and conversion-focused website. Big improvement.",
+    name: "Nusrat Jahan",
+    role: "Marketing Lead",
+  },
+  {
+    quote:
+      "React architecture was clean and scalable. Very professional work.",
+    name: "Arif Hossain",
+    role: "CTO, Software Agency",
+  },
+  {
+    quote:
+      "Design matched Figma perfectly. Loved the attention to detail.",
+    name: "Mehedi Hasan",
+    role: "Product Designer",
+  },
+  {
+    quote:
+      "SEO and performance optimizations showed real results.",
+    name: "Shakib Ahmed",
+    role: "Growth Consultant",
+  },
+  {
+    quote:
+      "Reliable, responsive and easy to collaborate with.",
+    name: "Farzana Akter",
+    role: "Operations Manager",
+  },
+ ];
  const FuturedWorkComponents = () => {
   return (
     <>
@@ -70,7 +125,7 @@ const steps = [
         </div>
 
         {/* ===== Projects ===== */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-5 ">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 ">
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
@@ -98,7 +153,7 @@ const steps = [
         </div>
 
         {/* ===== Process ===== */}
-        <div className="text-center mb-5 ">
+        <div className="text-center mb-10 ">
           <h3 className="text-3xl md:text-4xl font-bold text-white">
             A process that keeps you <span className="text-cyan-400">in the loop</span>
           </h3>
@@ -106,6 +161,7 @@ const steps = [
             Clear stages and predictable delivery — no surprises.
           </p>
         </div>
+        
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {steps.map((item, i) => (
@@ -130,14 +186,84 @@ const steps = [
             </motion.div>
           ))}
         </div>
-
-        {/* ===== CTA ===== */}
-        <div className="text-center ">
+        
+   {/* ===== CTA ===== */}
+        <div className=" text-center">
+      
           <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
             Book a free 15-min call
             </Link> 
-            <Link className="inline-flex mt-5 items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
+            <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
               Ask about timeline & estimate →            
+            </Link> 
+
+        </div>
+
+        <section className="bg-[#020617] py-24 px-6 md:px-16">
+      <div className="max-w-6xl mx-auto">
+
+        {/* Title */}
+        <div className="text-center mb-5">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            What clients <span className="text-cyan-400">say</span>
+          </h2>
+          <p className="text-gray-400 mt-4">
+            Real-world results from web, marketing & branding work.
+          </p>
+        </div>
+
+        {/* Swiper Slider */}
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          spaceBetween={24}
+          grabCursor={true}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+          }}>
+
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className=" h-full bg-[#020617]/90 border border-gray-700 rounded-2xl gap-5 p-8 transition-all duration-300 hover:border-cyan-400 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/10">
+                <FaQuoteLeft className="text-cyan-400 text-3xl mb-4" />
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  “{item.quote}”
+                </p>
+                <div className=" mt-5 ">
+                  <h4 className="text-white font-semibold">{item.name}</h4>
+                  <p className="text-gray-400 text-sm">{item.role}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+      </div>
+
+      {/* Custom Pagination Styling */}
+      <style jsx>{`
+        .swiper-pagination-bullet {
+          background: #334155; /* inactive dot */
+          opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+          background: #22d3ee; /* active dot cyan */
+        }
+      `}</style>
+    </section>
+        {/* ===== CTA ===== */}
+        <div className=" relative bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] rounded-2xl py-8 px-6 md:px-16 ">
+          <h2 className=" text-gray-400 mb-2.5 font-bold text-3xl">
+            Have an idea? Let’s ship it.
+          </h2>
+            <p className=" text-gray-400 mb-5 ">Book a quick call or explore solutions to get started.</p>
+          <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
+            Book a free 15-min call
+            </Link> 
+            <Link className="inline-flex items-center mr-5 px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-semibold hover:scale-105 transition" to={"/Contact"}>
+           Explore solutions →            
             </Link> 
 
         </div>

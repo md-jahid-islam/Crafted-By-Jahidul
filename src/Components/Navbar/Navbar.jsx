@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
@@ -48,14 +48,9 @@ const Navbar = () => {
     <>
     <nav className="sticky top-0 z-50 bg-[#020617]/90 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
-
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <img
-            src="/images/JA (3).png"
-            alt="logo"
-            className="w-10 h-10 rounded-full"
-          />
+          <img src="/images/JA (3).png" alt="logo" className="w-10 h-10 rounded-full"/>
           <span className="text-lg font-semibold text-gray-200 hover:text-cyan-400 transition">
             Crafted By Jahidul
           </span>
@@ -76,10 +71,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden text-gray-300 text-2xl"
-        >
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden text-gray-300 text-2xl">
           {isMenuOpen ? "✕" : "☰"}
         </button>
       </div>
@@ -92,8 +84,7 @@ const Navbar = () => {
               key={link.id}
               onClick={() => handleNavigation(link.id)}
               className="block w-full text-left px-4 py-2 rounded-lg
-              text-gray-300 hover:bg-gray-800 hover:text-cyan-400 transition"
-            >
+              text-gray-300 hover:bg-gray-800 hover:text-cyan-400 transition">
               {link.name}
             </button>
           ))}

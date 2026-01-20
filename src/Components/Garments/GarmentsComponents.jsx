@@ -115,7 +115,6 @@ import { BsArrowDownRightCircleFill } from "react-icons/bs";
  ];
 
  const GarmentsComponents = () => {
-
   return (
     <>
     <section className="relative bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#020617] py-24 px-6 md:px-16">

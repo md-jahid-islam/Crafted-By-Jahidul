@@ -63,7 +63,7 @@ import { RiTelegram2Fill } from 'react-icons/ri';
     return (
     <>
     <section>
-    <div ref={fabRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-center space-y-3">
+    <div ref={fabRef} className="fixed bottom-6 left-6 z-50 flex flex-col items-center space-y-3">
       <AnimatePresence>
         {isOpen && (
           <motion.div initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ import { RiTelegram2Fill } from 'react-icons/ri';
         )}
       </AnimatePresence>
       <div>
-        <span className=' text-center font-extrabold text-white'> Visit now..! </span>
+        <span className=' text-center font-extrabold text-white'> Live support..! </span>
       </div>
       <motion.button whileTap={{ scale: 0.9 }} onClick={() => setIsOpen(!isOpen)} className={`flex items-center justify-center w-14 h-14 rounded-full shadow-xl ${ isOpen ? 'bg-gray-700' : 'bg-gradient-to-r hover:bg-[#032D3C] bg-blue-400'
         } text-white transition-all`} aria-label={isOpen ? 'Close social menu' : 'Open social menu'}>

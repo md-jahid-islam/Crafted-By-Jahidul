@@ -1,4 +1,4 @@
-const processSteps = [
+ const processSteps = [
   {
     id: 1,
     title: "Discovery & fit",
@@ -40,9 +40,9 @@ const processSteps = [
       "Optional ongoing support or monthly improvements.",
     ],
   },
-];
+ ];
 
-const ProcessComponents = () => {
+ const ProcessComponents = () => {
   return (
     <section className="bg-[#020617] text-gray-300 py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -140,6 +140,6 @@ const ProcessComponents = () => {
       </div>
     </section>
   );
-};
+ };
 
-export default ProcessComponents;
+ export default ProcessComponents;

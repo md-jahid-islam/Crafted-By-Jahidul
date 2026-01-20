@@ -3,7 +3,6 @@ import { BsArrowDownRightCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaCode, FaRocket, FaShoppingCart, FaShieldAlt, FaTools, FaGlobe, FaEnvelopeOpenText, FaBullhorn, FaPalette, } from "react-icons/fa";
 import FuturedWorkComponents from "../FuturedWork/FuturedWorkComponents";
-import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
 
  const coreServices = [
   {
@@ -156,22 +155,10 @@ import WhatclientsComponents from "../Whatclients/WhatclientsComponents";
         </div>
 
         {/* CTA */}
-       <div className="text-center mt-10">
-          <motion.a
-            href="/Contact"
-            whileHover={{ scale: 1.08 }}
-            className="inline-flex items-center justify-center px-10 py-4 rounded-full
-            bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500
-            text-white font-semibold shadow-lg shadow-cyan-500/30
-            hover:shadow-cyan-500/50 transition gap-3" >
-            Discuss Your Project
-            <BsArrowDownRightCircle className="text-2xl" />
-          </motion.a>
-        </div>
+     
       </div>
     </section>  
     <FuturedWorkComponents/> 
-    <WhatclientsComponents/>
     </>
   );
  };

@@ -9,6 +9,7 @@ import {
  import { toast, ToastContainer } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
 import { Mail } from "lucide-react";
+import { TfiEmail } from "react-icons/tfi";
  
  // =============== Contact Components start ========= // 
  const ContactComponents = () => {
@@ -137,7 +138,7 @@ import { Mail } from "lucide-react";
             </div>
             </div>
            {/* Social Icons */}            
-            <div className="flex gap-5 justify-center md:justify-start pt-6 text-2xl text-gray-300">
+            <div className="flex gap-2.5 justify-center md:justify-start pt-6 text-2xl text-gray-300">
              <a href="https://www.linkedin.com/in/jahidul-islam-a5021b325" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition">
               <FaLinkedinIn />
               </a>
@@ -160,6 +161,17 @@ import { Mail } from "lucide-react";
                   </span>
                 )}
                </button>
+                 {/* Email */}          
+            <div className="flex items-center gap-3">
+            {/* Email Icon Only */}
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jahidulislamwebbd@gmail.com&su=Project%20Discussion&body=Hello%20Jahidul,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.%0D%0A%0D%0AThanks" target="_blank" rel="noopener noreferrer" aria-label="Send Email via Gmail" className="relative group text-blue-400 text-xl hover:text-blue-500 transition">
+            <TfiEmail />
+           {/* Tooltip */}
+           <span className="absolute -top-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+            Send Email
+           </span>
+             </a>
+              </div>
 
                  <a href="https://wa.me/message/O3CTLULQDASLC1" target="_blank" rel="noreferrer" className="hover:text-gray-100 transition">
                  <FaWhatsapp />
