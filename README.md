@@ -2,7 +2,6 @@
 
 <img width="1351" height="11715" alt="localhost_5173_ (3)" src="https://github.com/user-attachments/assets/a4343715-e390-4b5e-8fa9-bdad816232cb" />
 
-
 🧑‍💻 Hero Section (Intro) : 
 
 Building Modern Web Experiences Frontend / React Developer Full Stack Develope and node.js Short professional bio Call-to-action (Hire Me / Download CV) Social media icons (GitHub, LinkedIn, Facebook ext.)
