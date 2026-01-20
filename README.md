@@ -42,10 +42,15 @@ Used: Grid system Card-based content Info icons
 
 🧩 My Skills Section : 
 HTML, CSS, JavaScript,
+
 React, Firebase,
+
 Tailwind CSS,
+
 Git & GitHub,
+
 Figma,
+
 API Integration,
 
 Used: Skill icons Badge-style cards Hover & transition effects
