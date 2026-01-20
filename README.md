@@ -13,7 +13,9 @@ Career goal ও learning mindset Personal highlights
 
 Used: Reusable React components Clean typography Responsive layout
 
-🧠 Expertise / Skills Summary : Frontend Development UI/UX Friendly Design Responsive Web Design Performance Optimized Code
+🧠 Expertise / Skills Summary : 
+
+Frontend Development UI/UX Friendly Design Responsive Web Design Performance Optimized Code
 
 Used: Icon-based skill cards Hover animation CSS transition
 
