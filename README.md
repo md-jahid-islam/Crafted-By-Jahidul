@@ -9,7 +9,7 @@ Used: React JSX Flexbox / Grid CSS animation & hover effects
 
 👤 About Me Section :
 
-Career goal ও learning mindset Personal highlights
+Career goal & learning mindset Personal highlights
 
 Used: Reusable React components Clean typography Responsive layout
 
